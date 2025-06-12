@@ -6,87 +6,70 @@
   <title>Cursos de Verano A+</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Nunito', sans-serif;
-      background: #f4f9ff;
-      color: #333;
-    }
-
     header {
-      background: #00a97f;
-      color: white;
-      padding: 1em;
-      text-align: center;
-      position: relative;
-    }
+  background: #00a97f;
+  color: white;
+  padding: 1em 0;
+}
 
-    header img {
-      height: 60px;
-      margin: 0 10px;
-      vertical-align: middle;
-    }
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 1em;
+  flex-wrap: wrap;
+}
 
-    h1 {
-      font-size: 2em;
-      margin-top: 0.3em;
-    }
+.logo {
+  height: 80px;
+  max-width: 120px;
+}
 
-    .container {
-      padding: 2em;
-      max-width: 1000px;
-      margin: auto;
-    }
+.title-block {
+  text-align: center;
+  flex-grow: 1;
+  padding: 0 1em;
+}
 
-    .curso {
-      background: white;
-      padding: 1.5em;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      margin-bottom: 2em;
-      transition: transform 0.3s;
-    }
+.title-block h1 {
+  margin: 0.3em 0 0.2em;
+  font-size: 2em;
+}
 
-    .curso:hover {
-      transform: translateY(-5px);
-    }
+.title-block p {
+  margin: 0;
+  font-weight: 300;
+}
 
-    .curso h2 {
-      color: #00a97f;
-      margin-top: 0;
-    }
+/* Responsive */
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+  }
 
-    .curso ul {
-      padding-left: 1.2em;
-    }
+  .logo {
+    height: 60px;
+    margin: 0.5em;
+  }
 
-    .info {
-      background: #ffe88f;
-      padding: 1.5em;
-      border-radius: 15px;
-      margin-bottom: 2em;
-    }
-
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 1em;
-    }
-
-    @media (max-width: 600px) {
-      header img {
-        height: 40px;
-      }
-    }
+  .title-block {
+    padding: 0;
+  }
+}
   </style>
 </head>
 <body>
   <header>
-    <img src="img/logo-sin-fondo.png" alt="Logo 1">
-    <img src="img/Recurso-3.png" alt="Logo 2">
-    <h1>Cursos de Informática - Verano 2025</h1>
-    <p>¡Aprende, crea y diviértete con la tecnología!</p>
+    <div class="header-container">
+      <img src="img/logo-sin-fondo.png" alt="Logo 1" class="logo left">
+      <div class="title-block">
+        <h1>Cursos de Informática - Verano 2025</h1>
+        <p>¡Aprende, crea y diviértete con la tecnología!</p>
+      </div>
+      <img src="img/recurso-3.png" alt="Logo 2" class="logo right">
+    </div>
   </header>
 
   <div class="container">
@@ -151,7 +134,7 @@
       </ul>
           <h3>✉️ Inscripción rápida:</h3>
       <p>
-        <a href="https://wa.me/34600704778" target="_blank" style="margin-right: 10px;">
+        <a href="https://wa.me/34600704778" target="_blank" style="margin-right: 10px; text-decoration: none !important;">
           <button style="background-color: #25D366; color: white; border: none; padding: 10px 15px; border-radius: 5px;">WhatsApp Hellín</button>
         </a>
         <a href="https://wa.me/34684459929" target="_blank">
