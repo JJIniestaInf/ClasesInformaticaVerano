@@ -7,132 +7,141 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap" rel="stylesheet">
   <style>
     body {
-      margin: 0;
-      font-family: 'Nunito', sans-serif;
-      background: #f4f9ff;
-      color: #333;
-      overflow-x: hidden;
-    }
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background: #f4f9ff;
+  color: #333;
+  overflow-x: hidden;
+}
 
-    /* === HEADER === */
-    header {
-      background: #00a97f;
-      color: white;
-      padding: 1em;
-    }
+/* === HEADER === */
+header {
+  background: #00a97f;
+  color: white;
+  padding: 1em;
+}
 
-    .header-container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1em;
-      max-width: 1100px;
-      margin: 0 auto;
-      flex-wrap: nowrap;
-    }
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+}
 
-    .logo {
-      height: 80px;
-      width: auto;
-    }
+.logo {
+  height: 80px;
+  width: auto;
+}
 
-    .title-block {
-      flex: 1;
-      text-align: center;
-    }
+.title-block {
+  flex: 1;
+  text-align: center;
+}
 
-    .title-block h1 {
-      margin: 0.3em 0 0.2em;
-      font-size: 1.8em;
-    }
+.title-block h1 {
+  margin: 0.3em 0 0.2em;
+  font-size: 1.8em;
+}
 
-    .title-block p {
-      margin: 0;
-      font-weight: 300;
-    }
+.title-block p {
+  margin: 0;
+  font-weight: 300;
+}
 
-    /* === MAIN CONTENT === */
-    .container {
-      padding: 2em;
-      max-width: 1000px;
-      margin: auto;
-    }
+/* === MAIN CONTENT === */
+.container {
+  padding: 2em;
+  max-width: 1000px;
+  margin: auto;
+}
 
-    .curso {
-      background: white;
-      padding: 1.5em;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      margin-bottom: 2em;
-      transition: transform 0.3s;
-    }
+.curso {
+  background: white;
+  padding: 1.5em;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2em;
+  transition: transform 0.3s;
+}
 
-    .curso:hover {
-      transform: translateY(-5px);
-    }
+.curso:hover {
+  transform: translateY(-5px);
+}
 
-    .curso h2 {
-      color: #00a97f;
-      margin-top: 0;
-    }
+.curso h2 {
+  color: #00a97f;
+  margin-top: 0;
+}
 
-    .curso ul {
-      padding-left: 1.2em;
-    }
+.curso ul {
+  padding-left: 1.2em;
+}
 
-    /* === INFO BOX === */
-    .info {
-      background: #ffe88f;
-      padding: 1.5em;
-      border-radius: 15px;
-      margin-bottom: 2em;
-    }
+/* === INFO BOX === */
+.info {
+  background: #ffe88f;
+  padding: 1.5em;
+  border-radius: 15px;
+  margin-bottom: 2em;
+}
 
-    /* === BUTTONS === */
-    button {
-      background-color: #25D366;
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-right: 10px;
-    }
+/* === BUTTONS === */
+button {
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
 
-    button:hover {
-      opacity: 0.9;
-    }
+button:hover {
+  opacity: 0.9;
+}
 
-    /* === FOOTER === */
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 1em;
-    }
+/* === FOOTER === */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
 
-    /* === RESPONSIVE === */
-    @media (max-width: 768px) {
-      .header-container {
-        flex-direction: column;
-        align-items: center;
-      }
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-      .logo {
-        height: 60px;
-      }
+  .logo-left {
+    order: 1;
+  }
 
-      .title-block {
-        padding: 0;
-      }
+  .logo-right {
+    order: 2;
+  }
 
-      .buttons-wa {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        flex-wrap: wrap;
-      }
-    }
+  .title-block {
+    order: 3;
+    padding: 0;
+  }
+
+  .logo {
+    height: 60px;
+  }
+
+  .buttons-wa {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
   </style>
 </head>
 <body>
