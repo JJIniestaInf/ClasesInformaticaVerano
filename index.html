@@ -31,19 +31,23 @@ header {
   flex-wrap: nowrap;
 }
 
-.logo-group {
-  display: flex;
-  gap: 1em;
-}
-
 .logo {
   height: 80px;
   width: auto;
 }
 
+.logo-left {
+  order: 1;
+}
+
+.logo-right {
+  order: 3;
+}
+
 .title-block {
   flex: 1;
   text-align: center;
+  order: 2;
 }
 
 .title-block h1 {
@@ -123,21 +127,23 @@ footer {
     align-items: center;
   }
 
-  .logo-group {
+  .logo-left,
+  .logo-right {
     order: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1em;
-  }
-
-  .logo {
     height: 60px;
+    display: inline-block;
   }
 
   .title-block {
     order: 2;
     padding: 0;
+  }
+
+  /* Agrupar visualmente los logos en una fila */
+  .logo-left::after {
+    content: '';
+    display: inline-block;
+    width: 1em;
   }
 
   .buttons-wa {
@@ -153,14 +159,12 @@ footer {
 
 <header>
   <div class="header-container">
-    <div class="logo-group">
-      <img src="img/logo-sin-fondo.png" alt="Logo A+" class="logo">
-      <img src="img/Recurso-3.png" alt="Logo JJIniesta" class="logo">
-    </div>
+    <img src="img/logo-sin-fondo.png" alt="Logo A+" class="logo logo-left">
     <div class="title-block">
       <h1>Cursos de Informática - Verano 2025</h1>
       <p>¡Aprende, crea y diviértete con la tecnología!</p>
     </div>
+    <img src="img/Recurso-3.png" alt="Logo JJIniesta" class="logo logo-right">
   </div>
 </header>
 
