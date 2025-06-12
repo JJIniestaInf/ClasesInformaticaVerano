@@ -6,7 +6,7 @@
   <title>Cursos Informática JJIniesta y A+</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap" rel="stylesheet">
   <style>
-    body {
+body {
   margin: 0;
   font-family: 'Nunito', sans-serif;
   background: #f4f9ff;
@@ -36,9 +36,18 @@ header {
   width: auto;
 }
 
+.logo-left {
+  order: 1;
+}
+
+.logo-right {
+  order: 3;
+}
+
 .title-block {
   flex: 1;
   text-align: center;
+  order: 2;
 }
 
 .title-block h1 {
@@ -118,21 +127,16 @@ footer {
     align-items: center;
   }
 
-  .logo-left {
-    order: 1;
-  }
-
+  .logo-left,
   .logo-right {
-    order: 2;
+    order: 1;
+    height: 60px;
+    display: inline-block;
   }
 
   .title-block {
-    order: 3;
+    order: 2;
     padding: 0;
-  }
-
-  .logo {
-    height: 60px;
   }
 
   .buttons-wa {
@@ -142,18 +146,19 @@ footer {
     flex-wrap: wrap;
   }
 }
+
   </style>
 </head>
 <body>
 
   <header>
     <div class="header-container">
-      <img src="img/logo-sin-fondo.png" alt="Logo A+" class="logo left">
+      <img src="img/logo-sin-fondo.png" alt="Logo A+" class="logo logo-left">
       <div class="title-block">
         <h1>Cursos de Informática - Verano 2025</h1>
         <p>¡Aprende, crea y diviértete con la tecnología!</p>
       </div>
-      <img src="img/Recurso-3.png" alt="Logo JJIniesta" class="logo right">
+      <img src="img/Recurso-3.png" alt="Logo JJIniesta" class="logo logo-right">
     </div>
   </header>
 
