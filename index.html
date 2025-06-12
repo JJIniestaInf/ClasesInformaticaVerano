@@ -21,14 +21,20 @@
       padding: 1em;
     }
 
-    .logo-title {
+    .header-wrapper {
+      max-width: 1100px;
+      margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      flex-wrap: nowrap;
-      max-width: 1100px;
-      margin: 0 auto;
       gap: 1em;
+      flex-wrap: wrap;
+    }
+
+    .logo-row {
+      display: flex;
+      gap: 1em;
+      flex-shrink: 0;
     }
 
     .logo {
@@ -113,9 +119,13 @@
 
     /* === RESPONSIVE === */
     @media (max-width: 768px) {
-      .logo-title {
+      .header-wrapper {
         flex-direction: column;
-        gap: 0.5em;
+        align-items: center;
+      }
+
+      .logo-row {
+        justify-content: center;
       }
 
       .logo {
@@ -129,22 +139,24 @@
       .buttons-wa {
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
         justify-content: center;
-        align-items: center;
+        gap: 10px;
       }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <div class="logo-title">
-      <img src="img/logo-sin-fondo.png" alt="Logo A+" class="logo">
+    <div class="header-wrapper">
+      <div class="logo-row">
+        <img src="img/logo-sin-fondo.png" alt="Logo A+" class="logo">
+        <img src="img/Recurso-3.png" alt="Logo JJIniesta" class="logo">
+      </div>
       <div class="title-block">
         <h1>Cursos de Informática - Verano 2025</h1>
         <p>¡Aprende, crea y diviértete con la tecnología!</p>
       </div>
-      <img src="img/Recurso-3.png" alt="Logo JJIniesta Soluciones Informáticas" class="logo">
     </div>
   </header>
 
