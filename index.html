@@ -3,176 +3,131 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cursos Informática JJIniesta y A+</title>
+  <title>Cursos de Informática JJIniesta y A+</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap" rel="stylesheet">
   <style>
-/* ====== ESTILOS GENERALES ====== */
-body {
-  margin: 0;
-  font-family: 'Nunito', sans-serif;
-  background: #f4f9ff;
-  color: #333;
-  overflow-x: hidden;
-}
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background: #f4f9ff;
+      color: #333;
+      overflow-x: hidden;
+    }
 
-header {
-  background: #00a97f;
-  color: white;
-  padding: 1em;
-}
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #00a97f;
+      color: white;
+      padding: 1em;
+      flex-wrap: nowrap;
+    }
 
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1100px;
-  margin: 0 auto;
-  gap: 1em;
-}
+    .logo {
+      max-height: 80px;
+      height: auto;
+      width: auto;
+    }
 
-.logo {
-  width: 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    .title-block {
+      flex: 1;
+      text-align: center;
+      padding: 0 1em;
+    }
 
-.logo img {
-  height: 80px;
-  width: auto;
-}
+    .title-block h1 {
+      margin: 0.3em 0 0.2em;
+      font-size: 1.8em;
+    }
 
-.title-block {
-  width: 50%;
-  text-align: center;
-}
+    .title-block p {
+      margin: 0;
+      font-weight: 300;
+    }
 
-.title-block h1 {
-  margin: 0.3em 0 0.2em;
-  font-size: 1.8em;
-}
+    .container {
+      padding: 2em;
+      max-width: 1000px;
+      margin: auto;
+    }
 
-.title-block p {
-  margin: 0;
-  font-weight: 300;
-}
+    .curso {
+      background: white;
+      padding: 1.5em;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2em;
+      transition: transform 0.3s;
+    }
 
-/* ====== MAIN CONTENT ====== */
-.container {
-  padding: 2em;
-  max-width: 1000px;
-  margin: auto;
-}
+    .curso:hover {
+      transform: translateY(-5px);
+    }
 
-.curso {
-  background: white;
-  padding: 1.5em;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2em;
-  transition: transform 0.3s;
-}
+    .curso h2 {
+      color: #00a97f;
+      margin-top: 0;
+    }
 
-.curso:hover {
-  transform: translateY(-5px);
-}
+    .curso ul {
+      padding-left: 1.2em;
+    }
 
-.curso h2 {
-  color: #00a97f;
-  margin-top: 0;
-}
+    .info {
+      background: #ffe88f;
+      padding: 1.5em;
+      border-radius: 15px;
+      margin-bottom: 2em;
+    }
 
-.curso ul {
-  padding-left: 1.2em;
-}
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
 
-/* ====== INFO BOX ====== */
-.info {
-  background: #ffe88f;
-  padding: 1.5em;
-  border-radius: 15px;
-  margin-bottom: 2em;
-}
+    button {
+      background-color: #25D366;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
 
-/* ====== BUTTONS ====== */
-button {
-  background-color: #25D366;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-right: 10px;
-}
+    button:hover {
+      opacity: 0.9;
+    }
 
-button:hover {
-  opacity: 0.9;
-}
+    @media (max-width: 768px) {
+      header {
+        /* flex-direction: column; */ /* Eliminado para mantener los logos en línea */
+        text-align: center;
+      }
 
-/* ====== FOOTER ====== */
-footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 1em;
-}
+      .logo {
+        max-height: 60px;
+        margin: 0.5em 0;
+      }
 
-/* ====== RESPONSIVE ====== */
-@media (max-width: 768px) {
-  .header-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logo {
-    width: auto;
-    display: inline-flex;
-    margin: 0 0.5em;
-  }
-
-  .logo-left,
-  .logo-right {
-    order: 1;
-  }
-
-  .title-block {
-    order: 2;
-    width: 100%;
-    text-align: center;
-    margin-top: 0.5em;
-  }
-
-  .logo img {
-    height: 60px;
-  }
-
-  .buttons-wa {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-}
-
+      .title-block {
+        padding: 0;
+      }
+    }
   </style>
 </head>
 <body>
-
-<header>
-  <div class="header-container">
-    <div class="logo logo-left">
-      <img src="img/logo-sin-fondo.png" alt="Logo A+">
-    </div>
+  <header>
+    <img src="img/logo-sin-fondo.png" alt="Logo A+" class="logo">
     <div class="title-block">
       <h1>Cursos de Informática - Verano 2025</h1>
       <p>¡Aprende, crea y diviértete con la tecnología!</p>
     </div>
-    <div class="logo logo-right">
-      <img src="img/Recurso-3.png" alt="Logo JJIniesta">
-    </div>
-  </div>
-</header>
-
+    <img src="img/Recurso-3.png" alt="Logo JJIniesta Soluciones Informáticas" class="logo">
+  </header>
 
   <div class="container">
     <div class="curso">
@@ -236,11 +191,11 @@ footer {
       </ul>
 
       <h3>✉️ Inscripción rápida:</h3>
-      <p class="buttons-wa">
-        <a href="https://wa.me/34600704778" target="_blank" style="text-decoration: none;">
+      <p>
+        <a href="https://wa.me/34600704778" target="_blank" style="text-decoration: none; margin-bottom: 10px;">
           <button>WhatsApp Hellín</button>
         </a>
-        <a href="https://wa.me/34684459929" target="_blank" style="text-decoration: none;">
+        <a href="https://wa.me/34684459929" target="_blank">
           <button>WhatsApp Tobarra</button>
         </a>
       </p>
