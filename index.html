@@ -6,7 +6,7 @@
   <title>Cursos de Verano A+</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap" rel="stylesheet">
   <style>
-        body {
+    body {
       margin: 0;
       font-family: 'Nunito', sans-serif;
       background: #f4f9ff;
@@ -16,9 +16,6 @@
     header {
       background: #00a97f;
       color: white;
-      padding: 1em;
-      text-align: center;
-      position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -27,41 +24,32 @@
       flex-wrap: wrap;
     }
 
-    header img {
-      height: 60px;
-      margin: 0 10px;
-      vertical-align: middle;
+    .logo-container {
+      flex: 0 0 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    h1 {
-      font-size: 2em;
+    .title-block {
+      flex: 0 0 50%;
+      padding: 0 1em;
     }
 
     .logo {
-  flex: 0 0 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+      max-height: 100px;
+      max-width: 100%;
+    }
 
-.title-block {
-  flex: 0 0 50%;
-  padding: 0 1em;
-}
+    .title-block h1 {
+      margin: 0.3em 0 0.2em;
+      font-size: 2em;
+    }
 
-.logo {
-  max-height: 100px;
-  max-width: 100%;
-}
-
-.title-block h1 {
-  margin: 0.3em 0 0.2em;
-}
-
-.title-block p {
-  margin: 0;
-  font-weight: 300;
-}
+    .title-block p {
+      margin: 0;
+      font-weight: 300;
+    }
 
     .container {
       padding: 2em;
@@ -105,37 +93,49 @@
       padding: 1em;
     }
 
-    @media (max-width: 600px) {
-      header img {
-        height: 40px;
-      }
+    button {
+      background-color: #25D366;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 10px;
     }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
     @media (max-width: 768px) {
       header {
         flex-direction: column;
       }
-    
-      .logo,
+
+      .logo-container,
       .title-block {
         flex: 0 0 auto;
         width: 100%;
         margin: 0.5em 0;
       }
-    
+
       .logo {
         max-height: 70px;
       }
+    }
   </style>
 </head>
 <body>
   <header>
-    <div class="header-container">
-      <img src="img/logo-sin-fondo.png" alt="Logo 1" class="logo left">
-      <div class="title-block">
-        <h1>Cursos de Informática - Verano 2025</h1>
-        <p>¡Aprende, crea y diviértete con la tecnología!</p>
-      </div>
-      <img src="img/Recurso-3.png" alt="Logo 2" class="logo right">
+    <div class="logo-container">
+      <img src="img/logo-sin-fondo.png" alt="Logo A+" class="logo">
+    </div>
+    <div class="title-block">
+      <h1>Cursos de Informática - Julio 2025</h1>
+      <p>¡Aprende, crea y diviértete con la tecnología!</p>
+    </div>
+    <div class="logo-container">
+      <img src="img/Recurso-3.png" alt="Logo JJIniesta Soluciones Informáticas" class="logo">
     </div>
   </header>
 
@@ -199,13 +199,14 @@
         <li><strong>Hellín:</strong> 600 704 778</li>
         <li><strong>Tobarra:</strong> 684 459 929</li>
       </ul>
-          <h3>✉️ Inscripción rápida:</h3>
+
+      <h3>✉️ Inscripción rápida:</h3>
       <p>
-        <a href="https://wa.me/34600704778" target="_blank" style="margin-right: 10px; text-decoration: none;">
-          <button style="background-color: #25D366; color: white; border: none; padding: 10px 15px; border-radius: 5px;">WhatsApp Hellín</button>
+        <a href="https://wa.me/34600704778" target="_blank" style="text-decoration: none;">
+          <button>WhatsApp Hellín</button>
         </a>
         <a href="https://wa.me/34684459929" target="_blank">
-          <button style="background-color: #25D366; color: white; border: none; padding: 10px 15px; border-radius: 5px;">WhatsApp Tobarra</button>
+          <button>WhatsApp Tobarra</button>
         </a>
       </p>
     </div>
@@ -214,5 +215,7 @@
   <footer>
     © 2025 Centro Educativo A+ y JJIniesta Soluciones Informáticas. Todos los derechos reservados.
   </footer>
+</body>
+</html>
 </body>
 </html>
