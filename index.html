@@ -19,6 +19,12 @@
       padding: 1em;
       text-align: center;
       position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1em 0;
+      text-align: center;
+      flex-wrap: wrap;
     }
 
     header img {
@@ -29,8 +35,33 @@
 
     h1 {
       font-size: 2em;
-      margin-top: 0.3em;
     }
+
+    .logo-container {
+  flex: 0 0 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-block {
+  flex: 0 0 50%;
+  padding: 0 1em;
+}
+
+.logo {
+  max-height: 100px;
+  max-width: 100%;
+}
+
+.title-block h1 {
+  margin: 0.3em 0 0.2em;
+}
+
+.title-block p {
+  margin: 0;
+  font-weight: 300;
+}
 
     .container {
       padding: 2em;
