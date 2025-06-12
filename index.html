@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cursos de Verano A+</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background: #f4f9ff;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #00a97f;
+      color: white;
+      padding: 1em;
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      gap: 1em;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      height: 80px;
+      width: auto;
+    }
+
+    .title-block {
+      text-align: center;
+    }
+
+    .title-block h1 {
+      margin: 0.3em 0 0.2em;
+      font-size: 1.8em;
+    }
+
+    .title-block p {
+      margin: 0;
+      font-weight: 300;
+    }
+
+    .container {
+      padding: 2em;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .curso {
+      background: white;
+      padding: 1.5em;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2em;
+      transition: transform 0.3s;
+    }
+
+    .curso:hover {
+      transform: translateY(-5px);
+    }
+
+    .curso h2 {
+      color: #00a97f;
+      margin-top: 0;
+    }
+
+    .curso ul {
+      padding-left: 1.2em;
+    }
+
+    .info {
+      background: #ffe88f;
+      padding: 1.5em;
+      border-radius: 15px;
+      margin-bottom: 2em;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    button {
+      background-color: #25D366;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    @media (max-width: 768px) {
+      .logo-title {
+        flex-direction: column;
+      }
+
+      .logo {
+        height: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="img/logo-sin-fondo.png" alt="Logo A+" class="logo">
+      <div class="title-block">
+        <h1>Cursos de Informática - Verano 2025</h1>
+        <p>¡Aprende, crea y diviértete con la tecnología!</p>
+      </div>
+      <img src="img/Recurso-3.png" alt="Logo JJIniesta Soluciones Informáticas" class="logo">
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="curso">
+      <h2>🧠 Teclea como un Pro</h2>
+      <ul>
+        <li>Aprende a escribir sin mirar el teclado.</li>
+        <li>Mejora tu velocidad y precisión.</li>
+        <li>Juegos y retos para competir contigo mismo.</li>
+        <li>Ideal para hacer los deberes ¡a toda máquina!</li>
+      </ul>
+    </div>
+
+    <div class="curso">
+      <h2>🤖 Inteligencia Artificial para Estudiantes Inteligentes</h2>
+      <ul>
+        <li>Qué es la inteligencia artificial y cómo funciona.</li>
+        <li>Herramientas como ChatGPT, Canva y más para estudiar mejor.</li>
+        <li>Haz mapas mentales, esquemas y presentaciones con IA.</li>
+        <li>Ética y uso responsable de la tecnología.</li>
+      </ul>
+    </div>
+
+    <div class="curso">
+      <h2>👨‍💻 Piensa como un Programador</h2>
+      <ul>
+        <li>Crea videojuegos y animaciones con Scratch.</li>
+        <li>Aprende las bases del pensamiento computacional.</li>
+        <li>Introducción a Python (según nivel).</li>
+        <li>Desafíos lógicos y creativos para mentes curiosas.</li>
+      </ul>
+    </div>
+
+    <div class="curso">
+      <h2>🎨 Crea en Digital: Arte y 3D</h2>
+      <ul>
+        <li>Iniciación al dibujo digital.</li>
+        <li>Diseño de personajes y escenarios.</li>
+        <li>Modelado básico en 3D con herramientas accesibles.</li>
+        <li>Da vida a tus ideas con colores y volumen.</li>
+      </ul>
+    </div>
+
+    <div class="info">
+      <h3>🎯 Dirigido a:</h3>
+      <p>Chicos y chicas del instituto o últimos años de primaria.</p>
+
+      <h3>🗓️ Fechas:</h3>
+      <p>Todo el mes de julio, en horario de mañana:</p>
+      <ul>
+        <li><strong>Tobarra</strong>: Lunes y Miércoles</li>
+        <li><strong>Hellín</strong>: Martes y Jueves</li>
+      </ul>
+
+      <h3>💶 Precio:</h3>
+      <p>60€ por curso.</p>
+
+      <h3>📞 Inscripciones:</h3>
+      <ul>
+        <li><strong>Hellín:</strong> 600 704 778</li>
+        <li><strong>Tobarra:</strong> 684 459 929</li>
+      </ul>
+
+      <h3>✉️ Inscripción rápida:</h3>
+      <p>
+        <a href="https://wa.me/34600704778" target="_blank">
+          <button>WhatsApp Hellín</button>
+        </a>
+        <a href="https://wa.me/34684459929" target="_blank">
+          <button>WhatsApp Tobarra</button>
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Centro Educativo A+ y JJIniesta Soluciones Informáticas. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
