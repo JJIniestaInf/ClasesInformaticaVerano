@@ -6,6 +6,7 @@
   <title>Cursos Informática JJIniesta y A+</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap" rel="stylesheet">
   <style>
+/* ====== ESTILOS GENERALES ====== */
 body {
   margin: 0;
   font-family: 'Nunito', sans-serif;
@@ -14,7 +15,6 @@ body {
   overflow-x: hidden;
 }
 
-/* === HEADER === */
 header {
   background: #00a97f;
   color: white;
@@ -25,29 +25,26 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1em;
   max-width: 1100px;
   margin: 0 auto;
-  flex-wrap: nowrap;
+  gap: 1em;
 }
 
 .logo {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
   height: 80px;
   width: auto;
 }
 
-.logo-left {
-  order: 1;
-}
-
-.logo-right {
-  order: 3;
-}
-
 .title-block {
-  flex: 1;
+  width: 50%;
   text-align: center;
-  order: 2;
 }
 
 .title-block h1 {
@@ -60,7 +57,7 @@ header {
   font-weight: 300;
 }
 
-/* === MAIN CONTENT === */
+/* ====== MAIN CONTENT ====== */
 .container {
   padding: 2em;
   max-width: 1000px;
@@ -89,7 +86,7 @@ header {
   padding-left: 1.2em;
 }
 
-/* === INFO BOX === */
+/* ====== INFO BOX ====== */
 .info {
   background: #ffe88f;
   padding: 1.5em;
@@ -97,7 +94,7 @@ header {
   margin-bottom: 2em;
 }
 
-/* === BUTTONS === */
+/* ====== BUTTONS ====== */
 button {
   background-color: #25D366;
   color: white;
@@ -112,7 +109,7 @@ button:hover {
   opacity: 0.9;
 }
 
-/* === FOOTER === */
+/* ====== FOOTER ====== */
 footer {
   background: #222;
   color: white;
@@ -120,30 +117,33 @@ footer {
   padding: 1em;
 }
 
-/* === RESPONSIVE === */
+/* ====== RESPONSIVE ====== */
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column;
     align-items: center;
   }
 
+  .logo {
+    width: auto;
+    display: inline-flex;
+    margin: 0 0.5em;
+  }
+
   .logo-left,
   .logo-right {
     order: 1;
-    height: 60px;
-    display: inline-block;
   }
 
   .title-block {
     order: 2;
-    padding: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5em;
   }
 
-  /* Agrupar visualmente los logos en una fila */
-  .logo-left::after {
-    content: '';
-    display: inline-block;
-    width: 1em;
+  .logo img {
+    height: 60px;
   }
 
   .buttons-wa {
@@ -153,20 +153,26 @@ footer {
     flex-wrap: wrap;
   }
 }
+
   </style>
 </head>
 <body>
 
 <header>
   <div class="header-container">
-    <img src="img/logo-sin-fondo.png" alt="Logo A+" class="logo logo-left">
+    <div class="logo logo-left">
+      <img src="img/logo-sin-fondo.png" alt="Logo A+">
+    </div>
     <div class="title-block">
       <h1>Cursos de Informática - Verano 2025</h1>
       <p>¡Aprende, crea y diviértete con la tecnología!</p>
     </div>
-    <img src="img/Recurso-3.png" alt="Logo JJIniesta" class="logo logo-right">
+    <div class="logo logo-right">
+      <img src="img/Recurso-3.png" alt="Logo JJIniesta">
+    </div>
   </div>
 </header>
+
 
   <div class="container">
     <div class="curso">
